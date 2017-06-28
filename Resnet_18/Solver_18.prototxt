@@ -12,5 +12,5 @@ max_iter: 4000
 momentum: 0.9
 weight_decay: 0.0001
 snapshot: 1000
-snapshot_prefix: "/home/ubuntu/ResNet-Crop_classification/ResNet_Crop_Classification"
+snapshot_prefix: "/home/ubuntu/DeepLearning_crop_classification/ResNet_Crop_Classification"
 solver_mode: CPU
