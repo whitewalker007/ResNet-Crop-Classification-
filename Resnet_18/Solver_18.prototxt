@@ -1,8 +1,8 @@
 net: "/home/ubuntu/DeepLearning_crop_classification/ResNet_Crop_Classification/Resnet_18/train_val_18.prototxt"
 test_iter: 100
-test_interval: 400
+test_interval: 100
 test_initialization: false
-display: 40
+display: 20
 average_loss: 40
 base_lr: 0.0001
 lr_policy: "step"
