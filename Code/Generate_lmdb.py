@@ -18,8 +18,8 @@ from caffe.proto import caffe_pb2
 import lmdb
 
 #Image Size
-IMG_WIDTH = 256
-IMG_HEIGHT = 256
+IMG_WIDTH = 224
+IMG_HEIGHT = 224
 
 def transform_img(img, img_width=IMG_WIDTH, img_height=IMG_HEIGHT):
 
