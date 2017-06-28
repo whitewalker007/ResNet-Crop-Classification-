@@ -867,21 +867,19 @@ layer {
   }
 }
 layer {
-  name: "prob"
+  name: "accuracy"
+  type: "Accuracy"
+  bottom: "fc1000"
+  bottom: "label"
+  top: "accuracy"
+  include {
+    phase: TEST
+          }
+      }
+layer {
+  name: "loss"
   type: "SoftmaxWithLoss"
   bottom: "fc1000"
   bottom: "label"
-  top: "prob"
-  include {
-    phase: TRAIN
-  }
-}
-layer {
-  name: "probt"
-  type: "Softmax"
-  bottom: "fc1000"
-  top: "probt"
-  include {
-    phase: TEST
-  }
-}
+  top: "loss"
+      }
