@@ -19,18 +19,21 @@ layer {
 }
 layer {
   name: "resnet_18"
-  type: "MemoryData"
+  type: "Data"
   top: "data"
   top: "label"
   include {
     phase: TEST
   }
-  memory_data_param {
+  transform_param {
+    mirror: false
+    mean_file: "/home/ubuntu/DeepLearning_crop_classification/input_1/mean.binaryproto"
+                  }
+  data_param {
+    source: "/home/ubuntu/DeepLearning_crop_classification/input_1/validation_lmdb"
+    backend: LMDB
     batch_size: 2
-    channels: 3
-    height: 224
-    width: 224
-  }
+             }
 }
 layer {
   name: "conv1"
