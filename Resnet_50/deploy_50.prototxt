@@ -1,8 +1,9 @@
-name: "Resnet_50"
+name: "ResNet-50"
 layer {
-  name: "data"
-  type: "Input"
+  name: "resnet_50"
+  type: "Data"
   top: "data"
+  top: "label"
   input_param { shape: { dim: 1 dim: 3 dim: 224 dim: 224 } }
       }
 
