@@ -18,7 +18,7 @@ layer {
   }
 }
 layer {
-  name: "resnet_18"
+  name: "resnet_50"
   type: "Data"
   top: "data"
   top: "label"
