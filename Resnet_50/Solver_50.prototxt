@@ -1,0 +1,16 @@
+net: "/home/ubuntu/DeepLearning_crop_classification/ResNet_Crop_Classification/Resnet_50/train_val_50.prototxt"
+test_iter: 100
+test_interval: 400
+test_initialization: false
+display: 40
+average_loss: 40
+base_lr: 0.001
+lr_policy: "step"
+stepsize: 5000
+gamma: 0.96
+max_iter: 50000
+momentum: 0.9
+weight_decay: 0.0001
+snapshot: 10000
+snapshot_prefix: "/home/ubuntu/DeepLearning_crop_classification/ResNet_Crop_Classification"
+solver_mode: GPU
