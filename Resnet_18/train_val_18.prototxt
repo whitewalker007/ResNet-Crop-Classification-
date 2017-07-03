@@ -9,11 +9,11 @@ layer {
   }
   transform_param {
     mirror: true
-    mean_file: "/home/ubuntu/DeepLearning_crop_classification/input_1/mean.binaryproto"
+    mean_file: "/home/ubuntu/DeepLearning_crop_classification/input_2/mean.binaryproto"
   }
   data_param {
-    source: "/home/ubuntu/DeepLearning_crop_classification/input_1/train_lmdb"
-    batch_size: 8
+    source: "/home/ubuntu/DeepLearning_crop_classification/input_2/train_lmdb"
+    batch_size: 16
     backend: LMDB
   }
 }
@@ -27,12 +27,12 @@ layer {
   }
   transform_param {
     mirror: false
-    mean_file: "/home/ubuntu/DeepLearning_crop_classification/input_1/mean.binaryproto"
+    mean_file: "/home/ubuntu/DeepLearning_crop_classification/input_2/mean.binaryproto"
                   }
   data_param {
-    source: "/home/ubuntu/DeepLearning_crop_classification/input_1/validation_lmdb"
+    source: "/home/ubuntu/DeepLearning_crop_classification/input_2/validation_lmdb"
     backend: LMDB
-    batch_size: 2
+    batch_size: 4
              }
 }
 layer {
