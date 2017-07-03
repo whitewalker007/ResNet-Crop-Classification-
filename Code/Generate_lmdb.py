@@ -42,15 +42,15 @@ def make_datum(img, label):
         label=label,
         data=np.rollaxis(img, 2).tostring())
 
-train_lmdb = '/home/ubuntu/DeepLearning_crop_classification/input_1/train_lmdb'
-validation_lmdb = '/home/ubuntu/DeepLearning_crop_classification/input_1/validation_lmdb'
+train_lmdb = '/home/ubuntu/DeepLearning_crop_classification/input_2/train_lmdb'
+validation_lmdb = '/home/ubuntu/DeepLearning_crop_classification/input_2/validation_lmdb'
 
 os.system('rm -rf  ' + train_lmdb)
 os.system('rm -rf  ' + validation_lmdb)
 
 
-df_train = [img for img in glob.glob("/home/ubuntu/DeepLearning_crop_classification/input_1/train/*jpg")]
-df_test = [img for img in glob.glob("/home/ubuntu/DeepLearning_crop_classification/input_1/test/*jpg")]
+df_train = [img for img in glob.glob("/home/ubuntu/DeepLearning_crop_classification/input_2/train/*jpg")]
+df_test = [img for img in glob.glob("/home/ubuntu/DeepLearning_crop_classification/input_2/test/*jpg")]
 
 #We should shuffle df_train
 random.shuffle(df_train)
